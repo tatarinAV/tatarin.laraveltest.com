@@ -18,11 +18,11 @@ class Orders extends Migration
             $table->id();
             $table->integer('cart_id');
             $table->integer('customer_id');
-            $table->string('payment_type_id');
-            $table->string('shipping_type_id');
-            $table->integer('city');
+            $table->integer('payment_type_id');
+            $table->integer('shipping_type_id');
+            $table->string('city');
             $table->string('address');
-            $table->decimal('total', 4);
+            $table->decimal('total', 8);
             $table->timestamps();
         });
     }

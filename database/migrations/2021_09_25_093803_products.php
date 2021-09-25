@@ -16,7 +16,7 @@ class Products extends Migration
         //add Products
         Schema::create('products', function (Blueprint $table) {
             $table->id();
-            $table->decimal('price','4');
+            $table->decimal('price','8');
             $table->string('name'); /*no multilanguage on product*/
             $table->integer('status');
             $table->integer('stock_status_id');
